@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ArticleCard from "./articleCard";
 import Pagination from "../pagination";
 import DataJson from "../dataJson";
-import AddArticle from "./add"
+import AddArticle from "./add";
 
 const Articles = () => {
   const [articles, setArticles] = useState([]);
@@ -39,8 +39,9 @@ const Articles = () => {
     return (
       <div className="container mx-auto p-4">
         <h1 className="text-2xl font-bold mb-6 text-center">{error}</h1>
-        <div className="max-w-md mx-auto">
+        <div className="flex justify-center mt-4 max-w-md mx-auto">
           <DataJson />
+          <AddArticle />
         </div>
       </div>
     );
@@ -53,7 +54,10 @@ const Articles = () => {
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-2xl font-bold mb-6 text-center">Articles List</h1>
-        <AddArticle/>
+      <div className="flex justify-center mt-4 max-w-md mx-auto">
+        <DataJson />
+        <AddArticle />
+      </div>
       <div className="max-w-md mx-auto">
         {articles.map((article) => (
           <ArticleCard key={article._id} article={article} />
