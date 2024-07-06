@@ -1,5 +1,16 @@
 # Prueba de backend en NodeJS
 
+## Pasos para ejecutar
+1. npm  i en backend y frontend
+2. npm run dev en backend y frontend
+3. entrar en el navegador de preferencia bajo el localhost del frontend que deberia ser http://localhost:5173/
+4. se puede cargar articulos individualmente o usnado el archivo dato.json que esta alli, ya que hay 2 opciones de carga una manual y otra automatica, la manual es agregar un articulo, mientras que la automatica es cargar el archivo data,json y el sistema los guardara
+
+para ejecutar el codigo es necesario primero hacer npm i tanto en la carpeta de backend como en la carpeta de Frontend, ya que los 2 se manejan de forma difernete una vez que se hayan instalado las dependencias, se debe hacer un npm run dev, tanto en el lador del server
+como en el lado de frontend.
+
+el archivo dato.json se puede cargar una vez hecho lo mencionado arriba, desde la misma pagina web,
+
 La primer parte de la prueba tiene como objetivo evaluar tus conocimientos y competencias con la tecnologíad NodeJS y Mongodb.
 
 ## Descripción de la tarea
